@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="12dp" /> <!-- Điều chỉnh bán kính để bo góc theo ý muốn -->
+    <stroke android:width="3dp" android:color="@color/black" /> <!-- Định dạng viền của khung -->
+</shape>

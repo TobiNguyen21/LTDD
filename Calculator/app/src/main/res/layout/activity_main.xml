@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextCalculation"
+        android:layout_width="378dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rb1"
+        android:focusable="false"
+        android:hint="0"
+        android:inputType="none"
+        android:paddingRight="10dp"
+        android:textAlignment="textEnd"
+        android:textSize="24sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCalculation"
+        android:rowCount="5"
+
+        android:columnCount="4">
+
+        <!-- Phím số -->
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_margin="4dp"
+            android:background="@drawable/rb"
+            android:layout_row="4"
+            android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/rb"
+            android:layout_row="3"
+            android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:background="@drawable/rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:layout_margin="4dp"
+            android:layout_row="3"
+            android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_margin="4dp"
+            android:background="@drawable/rb"
+            android:layout_row="3"
+            android:layout_column="2"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_margin="4dp"
+            android:background="@drawable/rb"
+            android:layout_row="2"
+            android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:layout_margin="4dp"
+            android:background="@drawable/rb"
+            android:layout_row="2"
+            android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:layout_margin="4dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:background="@drawable/rb"/>
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:layout_margin="4dp"
+            android:background="@drawable/rb"
+            android:layout_row="1"
+            android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:layout_margin="4dp"
+            android:background="@drawable/rb"
+            android:layout_row="1"
+            android:layout_column="1"/>
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_row="1"
+            android:background="@drawable/rb"
+            android:layout_column="2"
+            android:layout_margin="4dp"
+            android:text="9" />
+
+        <!-- Các phép toán -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_margin="4dp"
+            android:background="@drawable/rb"
+            android:layout_row="3"
+            android:layout_column="3"/>
+
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_margin="4dp"
+            android:background="@drawable/rb"
+            android:layout_row="2"
+            android:layout_column="3"/>
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:background="@drawable/rb"
+            android:layout_row="1"
+            android:layout_margin="4dp"
+            android:layout_column="3"/>
+
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_margin="4dp"
+            android:layout_row="0"
+            android:background="@drawable/rb"
+            android:layout_column="3"/>
+
+        <Button
+            android:id="@+id/btnPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:layout_margin="4dp"
+            android:layout_row="0"
+            android:background="@drawable/rb"
+            android:layout_column="2"/>
+
+        <!-- Phím dấu phẩy -->
+        <Button
+            android:id="@+id/btnDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:layout_margin="4dp"
+            android:background="@drawable/rb"
+            android:layout_row="4"
+            android:layout_column="1"/>
+
+        <!-- Phím tính kết quả -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_columnSpan="2"
+            android:layout_margin="4dp"
+            android:background="@drawable/rb"
+            android:text="=" />
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:layout_margin="4dp"
+            android:background="@drawable/rb"
+            android:backgroundTint="@color/material_dynamic_tertiary80"
+            android:layout_row="0"
+            android:layout_column="0"/>
+
+        <!-- Phím AC -->
+        <Button
+            android:id="@+id/btnAllClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AC"
+            android:background="@drawable/rb"
+            android:layout_margin="4dp"
+            android:layout_row="0"
+            android:layout_column="1"/>
+    </GridLayout>
+
+</RelativeLayout>
